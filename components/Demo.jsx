@@ -21,13 +21,19 @@ function Demo(props) {
 					name={name}
 					checked={false}
 					/>
-				
-				
+
+
 				<RadioOptionGroup
 					name="referrer"
 					options={props.options}
-				 	onCheck={props.onCheck}
-			 	/>
+					onCheck={props.onCheck}
+				/>
+
+				<CheckboxOptionGroup
+					name="referrer"
+					options={props.options}
+					onCheck={props.onCheck}
+				/>
 
 				<p><input type="submit"/></p>
 			</form>
